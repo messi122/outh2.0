@@ -43,7 +43,7 @@ public class DoubanOAuthController {
         RestTemplate restTemplate = new RestTemplateBuilder().build();
 
         /**
-         * （D）客户端收到授权码，附上早先的"重定向URI"，向认证服务器申请令牌。这一步是在客户端的后台的服务器上完成的，对用户不可见。
+         * （D）客户端收到授权码，附上早先的"重定向URI"， 向认证服务器申请令牌。这一步是在客户端的后台的服务器上完成的，对用户不可见。
          */
         String accessToken = restTemplate.getForObject("http://"+ getLocalHost() +":7000/getTokenByCode?" +
             "grant_type=authorization_code&" +
