@@ -21,7 +21,7 @@ public class OAuthController {
 
     private static String getLocalHost() throws UnknownHostException {
         //return InetAddress.getLocalHost().getHostAddress();
-        return "10.100.19.211";
+        return "192.168.31.70";
     }
 
     private static String getRedirect_uri() throws UnknownHostException {
